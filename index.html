@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="EvaLauncher is a character-first Android launcher with a floating action hub, searchable app drawer, and privacy-aware settings."
+  >
+  <title>EvaLauncher | Character-First Android Launcher</title>
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="EvaLauncher home">
+        <img src="./assets/logo.png" alt="EvaLauncher logo" class="brand__mark">
+        <span class="brand__text">EvaLauncher</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#gallery">Screens</a>
+        <a href="#details">Details</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">English Official Site</p>
+          <h1>Turn your Android home screen into a living launcher.</h1>
+          <p class="hero__lede">
+            EvaLauncher blends a Live2D companion, a floating quick-action hub,
+            and an organized app drawer into one focused Android experience.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#gallery">See the interface</a>
+            <a class="button button--ghost" href="#features">Explore features</a>
+          </div>
+          <ul class="hero__stats" aria-label="Key highlights">
+            <li>
+              <strong>Live2D</strong>
+              <span>Animated character home</span>
+            </li>
+            <li>
+              <strong>Floating Hub</strong>
+              <span>One-tap actions and drawer access</span>
+            </li>
+            <li>
+              <strong>Drawer Tools</strong>
+              <span>Search, history, and folder organization</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero-card hero-card--main">
+            <span class="hero-card__label">Captured from emulator</span>
+            <img
+              src="./assets/screenshots/evalauncher_emulator_home_debug.png"
+              alt="EvaLauncher home screen with Live2D companion and floating launcher button"
+            >
+          </div>
+          <div class="hero-card hero-card--accent">
+            <img
+              src="./assets/screenshots/evalauncher_emulator_fabmenu.png"
+              alt="EvaLauncher floating menu opened on the home screen"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-strip" id="features">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What makes it different</p>
+          <h2>Built around presence, speed, and control.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-card__index">01</span>
+            <h3>Character-first home</h3>
+            <p>
+              The launcher opens on a stage-like home screen anchored by a Live2D companion,
+              giving the interface more personality than a standard icon wall.
+            </p>
+          </article>
+
+          <article class="feature-card reveal reveal--delay">
+            <span class="feature-card__index">02</span>
+            <h3>Floating action hub</h3>
+            <p>
+              A movable action button expands into quick shortcuts for settings,
+              phone, messaging, browser, camera, and the app drawer.
+            </p>
+          </article>
+
+          <article class="feature-card reveal reveal--delay-2">
+            <span class="feature-card__index">03</span>
+            <h3>Structured app drawer</h3>
+            <p>
+              The drawer supports recent history, search, and folder creation so large
+              app collections stay easy to navigate.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-card__index">04</span>
+            <h3>Settings with clean boundaries</h3>
+            <p>
+              Floating-mode controls, language access, app settings, and the privacy policy
+              are grouped into a dedicated settings flow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Screens captured from a running emulator</p>
+          <h2>Three surfaces, one launcher flow.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="screen-card reveal">
+            <img
+              src="./assets/screenshots/evalauncher_emulator_home_debug.png"
+              alt="EvaLauncher emulator screenshot showing the Live2D home screen"
+            >
+            <figcaption>
+              <strong>Home</strong>
+              <span>Live2D companion with a clean floating launcher entry.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card reveal reveal--delay">
+            <img
+              src="./assets/screenshots/evalauncher_emulator_fabmenu.png"
+              alt="EvaLauncher emulator screenshot showing the expanded floating quick action menu"
+            >
+            <figcaption>
+              <strong>Quick Actions</strong>
+              <span>Open core actions from a radial menu without leaving the home screen.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card reveal reveal--delay-2">
+            <img
+              src="./assets/screenshots/evalauncher_emulator_settings.png"
+              alt="EvaLauncher emulator screenshot showing the settings page"
+            >
+            <figcaption>
+              <strong>Settings</strong>
+              <span>Manage floating behavior, language, app settings, and privacy access.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section details" id="details">
+        <div class="details__panel reveal">
+          <p class="eyebrow">Product summary</p>
+          <h2>EvaLauncher is for Android users who want more than a utility shell.</h2>
+          <p>
+            It combines a visual mascot layer with a launcher workflow that stays practical:
+            quick entry points, searchable content, folder organization, and a settings surface
+            that exposes permission-sensitive behavior instead of hiding it.
+          </p>
+        </div>
+
+        <div class="details__list reveal reveal--delay">
+          <div class="detail-item">
+            <h3>Interaction model</h3>
+            <p>Live2D home, floating actions, bottom-sheet drawer, and configurable overlay mode.</p>
+          </div>
+          <div class="detail-item">
+            <h3>Core utilities</h3>
+            <p>Search, launch history, folders, system shortcuts, language access, and privacy handoff.</p>
+          </div>
+          <div class="detail-item">
+            <h3>Design direction</h3>
+            <p>Soft contrast, high legibility, motion-first presence, and a distinct character silhouette.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
