@@ -78,6 +78,7 @@ const baseTranslations = {
   "nav.features": "Features",
   "nav.gallery": "Screens",
   "nav.details": "Details",
+  "nav.privacy": "Privacy",
   "language.label": "Language",
   "language.selectAria": "Language selector",
   "hero.eyebrow": "Official Global Site",
@@ -125,6 +126,9 @@ const baseTranslations = {
   "details.items.utilities.body": "Search, launch history, folders, system shortcuts, language access, and privacy handoff.",
   "details.items.design.title": "Design direction",
   "details.items.design.body": "Soft contrast, high legibility, motion-first presence, and a distinct character silhouette.",
+  "details.items.privacy.title": "Privacy policy",
+  "details.items.privacy.body": "Read the full privacy policy for permissions, data handling, and policy updates on the official hosted page.",
+  "details.items.privacy.cta": "Open privacy policy",
 };
 
 const localeTranslations = {
