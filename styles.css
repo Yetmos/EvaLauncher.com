@@ -91,6 +91,12 @@ body::before {
   letter-spacing: 0.04em;
 }
 
+.toolbar-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .topnav {
   display: inline-flex;
   flex-wrap: wrap;
@@ -106,6 +112,39 @@ body::before {
 .topnav a:hover,
 .topnav a:focus-visible {
   color: var(--text);
+}
+
+.locale-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.locale-picker__label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.locale-picker__select {
+  min-width: 128px;
+  max-width: 160px;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.locale-picker__select option {
+  color: #08111e;
 }
 
 .section {
@@ -388,6 +427,27 @@ body::before {
   transition-delay: 220ms;
 }
 
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .topbar,
+html[dir="rtl"] .toolbar-actions,
+html[dir="rtl"] .topnav,
+html[dir="rtl"] .hero__actions,
+html[dir="rtl"] .hero__stats {
+  direction: rtl;
+}
+
+html[dir="rtl"] .brand {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero-card__label {
+  left: auto;
+  right: 18px;
+}
+
 @media (max-width: 1024px) {
   .hero,
   .details,
@@ -420,12 +480,28 @@ body::before {
 
   .topbar {
     top: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
     border-radius: 28px;
     padding: 14px;
   }
 
   .topnav {
     display: none;
+  }
+
+  .toolbar-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .locale-picker {
+    margin-left: auto;
+  }
+
+  html[dir="rtl"] .locale-picker {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .section {
