@@ -84,6 +84,7 @@ const baseTranslations = {
   "hero.eyebrow": "Official Global Site",
   "hero.title": "Turn your Android home screen into a living launcher.",
   "hero.lede": "EvaLauncher blends a Live2D companion, a floating quick-action hub, and an organized app drawer into one focused Android experience.",
+  "hero.ctaStore": "Get it on Google Play",
   "hero.ctaPrimary": "See the interface",
   "hero.ctaSecondary": "Explore features",
   "hero.statsLabel": "Key highlights",
