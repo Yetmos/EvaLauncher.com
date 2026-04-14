@@ -227,6 +227,13 @@ body::before {
   background: linear-gradient(135deg, var(--accent) 0%, #b8f1ff 100%);
 }
 
+.button--store {
+  color: #2e1900;
+  border-color: rgba(255, 190, 99, 0.4);
+  background: linear-gradient(135deg, var(--accent-warm) 0%, #ffe39a 100%);
+  box-shadow: 0 16px 38px rgba(255, 190, 99, 0.26);
+}
+
 .button--ghost {
   color: var(--text);
   border-color: var(--line);
